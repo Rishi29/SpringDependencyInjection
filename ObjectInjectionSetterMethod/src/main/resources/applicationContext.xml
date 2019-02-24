@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+
+
+<!--
+
+Not good way of inner bean, if other classes are also depended on Admission class then every time bean for Admission class need
+to be created inside bean of other classes. So better create the bean od Admission class only once outside and then give reference of
+it to other classes bean. 
+-->
+<!-- 
+<bean id ="student" class="com.spring.dependency.model.Student">
+<property name="admission">
+<bean class ="com.spring.dependency.model.Admission"></bean>
+</property>
+</bean> -->
+
+<bean id= "admission"  class="com.spring.dependency.model.Admission"></bean>
+
+<bean id="sportsStudent" class="com.spring.dependency.model.SportsStudent">
+	<property name="admitSportsStudent" ref="admission"></property>
+</bean>
+
+<bean id = "student" class="com.spring.dependency.model.Student">
+	<property name="admission" ref="admission"></property>
+</bean>
+
+</beans>
