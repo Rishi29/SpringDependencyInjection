@@ -6,12 +6,12 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import com.spring.dependency.model.Student;
 
 public class University {
-	
-	public static void main(String[]args) {
-		
+
+	public static void main(String[] args) {
+
 		ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
-		Student student = context.getBean("student",Student.class);
-	
+		Student student = context.getBean("student", Student.class);
+
 		student.diaplayStudentInfo();
 	}
 
