@@ -21,7 +21,7 @@ it to other classes bean.
 
 <!--Now we are going to create bean for Admission class outside and use the reference in other two classes -->
 
-<bean id= "admission"  class="com.spring.dependency.model.Admission"></bean>
+<bean id= "admission" class="com.spring.dependency.model.Admission"></bean>
 
 <bean id="sportsStudent" class="com.spring.dependency.model.SportsStudent">
 	<property name="admitSportsStudent" ref="admission"></property>

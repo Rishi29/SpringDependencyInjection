@@ -1,5 +1,10 @@
 package com.spring.dependency.model;
 
+
+/**
+ * @author Rishi
+ *
+ */
 public class Student {
 
 	private Admission admission;

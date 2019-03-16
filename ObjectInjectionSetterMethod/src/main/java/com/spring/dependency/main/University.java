@@ -6,6 +6,11 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import com.spring.dependency.model.SportsStudent;
 import com.spring.dependency.model.Student;
 
+
+/**
+ * @author Rishi
+ *
+ */
 public class University {
 	
 	public static void main(String[]args) {

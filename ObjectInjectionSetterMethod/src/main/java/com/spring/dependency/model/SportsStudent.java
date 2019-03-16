@@ -10,7 +10,7 @@ public class SportsStudent {
 
 	public void sportsStudentAdmission() {
 		
-		System.out.print(" Sports ");
+		System.out.print(" Sports  ");
 		admitSportsStudent.admitStudent();
 	}
 

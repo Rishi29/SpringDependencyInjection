@@ -1,5 +1,9 @@
 package com.spring.dependency.model;
 
+/**
+ * @author Rishi
+ *
+ */
 public class Admission {
 	
 	public void admitStudent() {
